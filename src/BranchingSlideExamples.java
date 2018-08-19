@@ -1,6 +1,12 @@
 /**
- * Contains examples used in lecture 3
- * https://docs.google.com/presentation/d/1pKVKTT7icfbJkPgnsE8XWmEX-Mv7t_FvL653w39BtiY/edit#slide=id.g40605ba44f_0_6
+ * Contains examples used in lecture 4
+ * https://docs.google.com/presentation/d/1pKVKTT7icfbJkPgnsE8XWmEX-Mv7t_FvL653w39BtiY/
+ *
+ * @author Albert Lionelle <br>
+ *     lionelle@colostate.edu <br>
+ *     Colorado State University <br>
+ *     Computer Science Department
+ * @version 1.0 Fall 18
  */
 public class BranchingSlideExamples {
 

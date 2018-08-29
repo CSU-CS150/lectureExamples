@@ -17,7 +17,6 @@ public class CStringExamples {
      * @param b - a value to shift
      * @return  the primitive character that would be the shifted down the ASCII chart
      */
-
     public char characterAddition(char a, int b) {
         return (char)(a + b);
     }

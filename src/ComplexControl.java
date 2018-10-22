@@ -41,10 +41,31 @@ public class ComplexControl {
         System.out.printf(" - Enterprise %C\n", character);
     }
 
+    public static boolean continueAndBreak(String toSearch, String hidden) {
+        String pattern = "";
+        boolean found = false;
+        int counter = 0;
+        for(int i = 0; i < toSearch.length(); i++) {
+            char tmp = toSearch.charAt(i);
+
+            if(Character.isWhitespace(tmp)) {
+                continue;
+            }
+            if(Character.isDigit(tmp)) {
+                pattern += tmp;
+                if(pattern.equalsIgnoreCase(hidden)) {
+                    found = true;
+                    break;
+                }
+            } else {
+                counter++;
+            }
+        }
+        return found;
+    }
+
     public static void main(String[] args) {
-        doWhileTest(10);
-
-
+        continueAndBreak("1) Pixar is #1 & his 3rd company", "113");
     }
 
 

@@ -17,11 +17,27 @@ public class MethodLecture {
 
 
     public static void main(String args[]) {
-
-        System.out.println("Hello, my name is " + getName());
-
-
+        System.out.println(overloaded(42));
     }
+
+    // more methods lecture
+
+    public String myDoctor = "The 10th Doctor";
+    public static String getDoctor() {
+        String myDoctor = "The 9th Doctor";
+        return myDoctor;
+    }
+
+
+
+    public static String overloaded(int x) {
+        return overloaded(x, "Answer");
+    }
+
+    public static String overloaded(int x, String str) {
+        return "The " + str + " is " + x;
+    }
+
 
 
 }

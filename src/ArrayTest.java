@@ -145,8 +145,24 @@ public class ArrayTest {
     }
 
 
+    private static void multipleArrays() {
+        String[] names = {"john", "paul", "george", "ringo"};
+        String[] role = {"singer", "base", "guitarist", "drummer"};
+
+        for(int i = 0; i < role.length; i++) {
+            if(role[i].equalsIgnoreCase("drummer")) {
+                System.out.println(names[i]);
+            }
+        }
+    }
+
+
+
 
     public static void main(String[] args) {
-        testGhosts();
+        multipleArrays();
+
+
+
     }
 }

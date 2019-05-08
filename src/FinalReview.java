@@ -42,8 +42,8 @@ public class FinalReview {
         try {
             PrintWriter writer = new PrintWriter(new File("input.txt"));
 
-            writer.println("42 is the answer 1.0");
-            writer.println("to the question");
+            writer.println("1. 42 is the answer 1.0");
+            writer.println("2. to the question");
 
             writer.close();
 
@@ -55,40 +55,61 @@ public class FinalReview {
 
     }
 
-    public static void scannerTest()  throws FileNotFoundException {
+    public static void scannerTest()  {
 
-        Scanner scanner = new Scanner(new File("input.txt")); //
+
 
         try {
+            Scanner scanner = new Scanner(new File("input.txt")); //
             //System.out.print("This is my line to read: ");
-
-
-            double dbl = scanner.nextDouble();
-            System.out.println(scanner.next());
-            System.out.println(scanner.next());
-            System.out.println(scanner.next());
+//1. 42 is the answer 1.0
+//2. to the question
             scanner.nextDouble();
-            System.out.printf("The variable I printed is %.2f\n", dbl);
-            scanner.next(); //TO
+            double dbl = scanner.nextDouble();
+            System.out.println(scanner.next()); // line 1
+            System.out.println(scanner.next()); // line 2
+            System.out.println(scanner.next()); // line 3
+            scanner.nextDouble();
+            System.out.printf("The variable I printed is %.2f\n", dbl); // line 4
+
+            System.out.println(scanner.nextInt());  // what is printed here?  - line 5
             String str = scanner.nextLine();
 
             System.out.printf("%10s's length is: %d", str, str.length());
         }catch(Exception ex) {
-            ex.printStackTrace();
+            //ex.printStackTrace();
+            System.out.println("Exception!");
             //System.err.print("This is not a double, silly");
             //System.exit(1);
         }
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void sortArray(int[] arr) {
+        Arrays.sort(arr);
+
+        /*for(int i = 0; i < arr.length; i++) {
+            int smallestIndex = i;
+            for(int j = i; j < arr.length; j++) {
+                if(arr[smallestIndex] > arr[j]) {
+                    smallestIndex = j;
+                }
+            }
+            int tmp = arr[smallestIndex];
+            arr[smallestIndex] = arr[i];
+            arr[i] = tmp;
+        }*/
+
+    }
+
+    public static void main(String[] args)  {
+        int[] arr = {10,11,5, 4, 25, -100000};
+        sortArray(arr);
+        System.out.println(Arrays.toString(arr));
+
 
         writeFile();
         scannerTest();
-        // go over files
 
-        // go try / catch
-
-        // scanner  -
 
 
 

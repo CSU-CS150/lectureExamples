@@ -160,7 +160,9 @@ public class ArrayTest {
 
 
     public static void main(String[] args) {
-        multipleArrays();
+        randomDice(10,20);
+        randomDice(20, 2);
+        randomDice(6, 10);
 
 
 

@@ -1,0 +1,20 @@
+public class PrintDebugging {
+	
+	public static void main(String[] args) {
+		System.out.println(complexMethod(2, 1)); //should print 2
+	}
+	
+	public static double complexMethod(int startingVal, int div) {
+		double rtn;
+		double numerVal = div;
+		double divVal = startingVal;
+		
+		
+		rtn = numerVal/divVal;
+		
+		return rtn;		
+	
+		
+	}
+
+}

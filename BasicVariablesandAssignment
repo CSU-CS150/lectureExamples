@@ -1,0 +1,10 @@
+public class Varibles {
+	
+	public static void main(String[] args) {
+		int myInt;
+		char myChar;
+		double myDouble;
+		boolean myBoolean;
+		
+    }
+}

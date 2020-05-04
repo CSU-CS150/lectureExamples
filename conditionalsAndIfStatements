@@ -1,0 +1,25 @@
+public class conditionalsAndIfStatements {
+
+	public static void main(String[] args) {
+		ifStatements();
+
+	}
+	public static boolean ifStatements() {
+		myChar1 = 'a';
+		myChar2 = 'z';
+		
+		myInt1 = 7;
+		myInt2 = 13;
+		
+		myBoolean = true;
+		
+		if() {
+			
+			
+		}
+		
+		
+	
+	}
+
+}

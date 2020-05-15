@@ -1,25 +1,25 @@
 public class conditionalsAndIfStatements {
-
-	public static void main(String[] args) {
-		ifStatements();
-
-	}
-	public static boolean ifStatements() {
-		myChar1 = 'a';
-		myChar2 = 'z';
+	
+	public static void ifstatements(int x, int y) {
 		
-		myInt1 = 7;
-		myInt2 = 13;
 		
-		myBoolean = true;
 		
-		if() {
 			
-			
+		
+		if(x > 100) {
+			System.out.print("You entered the if");
+		}
+		else {
+			System.out.println("You entered the else");
 		}
 		
+	}
+
+	public static void main(String[] args) {
 		
-	
+		ifstatements(4, 2);
+		
+
 	}
 
 }
